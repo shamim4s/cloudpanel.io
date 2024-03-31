@@ -70,8 +70,8 @@ setOSInfo()
 checkRequirements()
 {
   apt update
-  apt install openssh-server
-  apt install net-tools
+  apt -y install openssh-server
+  apt -y install net-tools
   apt remove mysql-client-8.0 mysql-server-8.0
   apt -y install lsof
   checkOperatingSystem
